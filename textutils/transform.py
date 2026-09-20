@@ -15,3 +15,12 @@ def character_count(text):
         The number of characters in the text.
     """
    return len(text)
+
+def reverse(text):
+   """Reverse the given text.
+    Args:
+        text: The input string.
+    Returns:
+        The reversed string.
+    """
+   return text[::-1]
