@@ -1,0 +1,1 @@
+- Added `text_statistics()` function
