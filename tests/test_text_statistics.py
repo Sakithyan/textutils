@@ -66,3 +66,28 @@ def test_only_whitespace():
 def test_non_string_raises():
     with pytest.raises(TypeError):
         text_statistics(42)
+
+
+def test_only_punctuation_has_no_words():
+    assert text_statistics("...") == {
+        "word_count": 0,
+        "character_count": 3,
+        "sentence_count": 0,
+        "longest_word": "",
+        "average_word_length": 0.0,
+    }
+
+
+def test_mixed_punctuation_only_tokens_are_not_words():
+    result = text_statistics("?! ...")
+    assert result["word_count"] == 0
+    assert result["sentence_count"] == 0
+    assert result["longest_word"] == ""
+    assert result["average_word_length"] == 0.0
+
+
+def test_standalone_dash_is_not_a_word():
+    result = text_statistics("Hello - world")
+    assert result["word_count"] == 2
+    assert result["longest_word"] == "Hello"
+    assert result["average_word_length"] == 5.0
