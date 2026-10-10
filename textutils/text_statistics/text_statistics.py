@@ -62,9 +62,7 @@ def text_statistics(text):
     else:
         longest = max(words, key=lambda w: len(w.strip(string.punctuation)))
         longest_word = longest.strip(string.punctuation)
-        average_word_length = round(
-            sum(len(w) for w in words) / word_count, 2
-        )
+        average_word_length = round(sum(len(w) for w in words) / word_count, 2)
 
     return {
         "word_count": word_count,

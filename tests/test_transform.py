@@ -53,4 +53,3 @@ def test_reverse(text, expected):
 def test_invalid_input_raises_typeerror(function, invalid_input):
     with pytest.raises(TypeError):
         function(invalid_input)
-        
