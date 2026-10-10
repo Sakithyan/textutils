@@ -1,3 +1,6 @@
+import re
+
+
 def capitalize_words(text):
     """
     Capitalize the first letter of each word in the given text.
@@ -6,4 +9,6 @@ def capitalize_words(text):
     Returns:
         The string with each word capitalized.
     """
-    return text.title()
+    if not isinstance(text, str):
+        raise TypeError("text must be a string")
+    return re.sub(r"\S+", lambda match: match.group().capitalize(), text)
