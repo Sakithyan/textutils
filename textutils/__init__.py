@@ -1,11 +1,11 @@
-from .transform import word_count, character_count, reverse
 from .casing import capitalize_words
 from .text_statistics import text_statistics
+from .transform import character_count, reverse, word_count
 
 __all__ = [
-    "word_count",
+    "capitalize_words",
     "character_count",
     "reverse",
-    "capitalize_words",
     "text_statistics",
+    "word_count",
 ]
