@@ -5,6 +5,9 @@ def word_count(text):
     Returns:
         The number of words in the text.
     """
+   if not isinstance(text, str):
+        raise TypeError("text must be a string")
+   
    return len(text.split())
 
 def character_count(text):
@@ -14,6 +17,9 @@ def character_count(text):
     Returns:
         The number of characters in the text.
     """
+   if not isinstance(text, str):
+        raise TypeError("text must be a string")
+
    return len(text)
 
 def reverse(text):
@@ -23,4 +29,6 @@ def reverse(text):
     Returns:
         The reversed string.
     """
+   if not isinstance(text, str):
+           raise TypeError("text must be a string")
    return text[::-1]
