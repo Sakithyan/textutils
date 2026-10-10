@@ -1,26 +1,26 @@
 # Python cache
 __pycache__/
-   *.pyc
-   *.pyo
+*.pyc
+*.pyo
 
-   # Virtual environment
-   .venv/
-   venv/
-   env/
+# Virtual environment
+.venv/
+venv/
+env/
 
-   # Editor settings
-   .vscode/
-   .idea/
+# Editor settings
+.vscode/
+.idea/
 
-   # Local secrets / config
-   .env
+# Local secrets / config
+.env
 
-   # Packaging / build
-   *.egg-info/
-   dist/
-   build/
+# Packaging / build
+*.egg-info/
+dist/
+build/
 
-   # Tests / coverage
-   .pytest_cache/
-   .coverage
-   htmlcov/
+# Tests / coverage
+.pytest_cache/
+.coverage
+htmlcov/
