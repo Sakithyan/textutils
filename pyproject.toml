@@ -23,7 +23,7 @@ dev = [
 include = ["textutils*"]
 
 [tool.pytest.ini_options]
-testpaths = ["tests"]
+testpaths = ["textutils"]
 pythonpath = ["."]
 
 [tool.black]
@@ -38,3 +38,4 @@ select = ["E", "F", "I", "RUF"]
 [tool.coverage.run]
 branch = true
 source = ["textutils"]
+omit = ["*/tests/*"]
