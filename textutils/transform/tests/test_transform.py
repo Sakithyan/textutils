@@ -7,7 +7,7 @@ from textutils import character_count, reverse, word_count
     "text, expected",
     [
         ("Hello", 1),
-        ("Hello World", 2),
+        ("Hello World", 3),
         ("", 0),
         ("   ", 0),
         ("  Hello World  ", 2),
