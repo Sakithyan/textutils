@@ -12,7 +12,7 @@ A lightweight Python library for common text-processing operations.
 
 ## Installation
 
-pip install textutils
+pip install textutils-saki
 
 ## Usage
 
