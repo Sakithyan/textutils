@@ -3,7 +3,7 @@ requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "textutils"
+name = "textutils-saki"
 version = "0.1.0"
 description = "A lightweight Python library for common text-processing operations."
 readme = "README.md"
